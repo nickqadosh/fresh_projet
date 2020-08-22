@@ -1,4 +1,4 @@
-fetch("http://cross-origin.herokuapp.com/https://www.gabonreview.com/feed/")
+fetch("https://cross-origin.herokuapp.com/https://www.gabonreview.com/feed/")
   .then((response) => response.text())
   .then((str) => new window.DOMParser().parseFromString(str, "text/xml"))
   .then((data) => {
