@@ -1,6 +1,6 @@
 "use strict";
 
-fetch("https://cross-origin.herokuapp.com/https://www.gabonreview.com/feed/").then(function (response) {
+fetch("https://cross-origin.herokuapp.com/https://www.gabonmediatime.com/feed/").then(function (response) {
   return response.text();
 }).then(function (str) {
   return new window.DOMParser().parseFromString(str, "text/xml");
